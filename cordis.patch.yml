@@ -1,0 +1,8 @@
+- insert:
+    - id: plugin-forge
+      name: dsh-plugin-plugin-forge
+      config:
+        enabled: true
+        workspaceRoot: C:\Users\lenovo\.zcode\workspace\default   # 骨架生成/校验的根
+        allowWrite: false    # 允许 forge_new 写盘（默认只输出到回显，不落盘）
+        order: 790

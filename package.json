@@ -25,6 +25,11 @@
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "catalog": {
+      "category": "构建与开发工具",
+      "blurb": "插件脚手架：生成过 verify-plugin.mjs 的新插件骨架，validate 模式点名现有插件缺什么",
+      "entries": "`/forge` `forge_new` `forge_check`"
     }
   },
   "engines": {

@@ -8,16 +8,16 @@ export interface Config {
     allowWrite: boolean;
     order: number;
 }
-export declare const Config: Schema<Schemastery.ObjectS<{
-    enabled: Schema<boolean, boolean>;
-    workspaceRoot: Schema<string, string>;
-    allowWrite: Schema<boolean, boolean>;
-    order: Schema<number, number>;
-}>, Schemastery.ObjectT<{
-    enabled: Schema<boolean, boolean>;
-    workspaceRoot: Schema<string, string>;
-    allowWrite: Schema<boolean, boolean>;
-    order: Schema<number, number>;
-}>>;
+export declare const Config: Schema<Schemastery.ObjectS<NoInfer<{
+    enabled: Schema<boolean, boolean, "defined">;
+    workspaceRoot: Schema<string, string, "defined">;
+    allowWrite: Schema<boolean, boolean, "defined">;
+    order: Schema<number, number, "defined">;
+}>>, Schemastery.ObjectT<NoInfer<{
+    enabled: Schema<boolean, boolean, "defined">;
+    workspaceRoot: Schema<string, string, "defined">;
+    allowWrite: Schema<boolean, boolean, "defined">;
+    order: Schema<number, number, "defined">;
+}>>, "plain">;
 export declare function apply(ctx: Context, config: Config): void;
 //# sourceMappingURL=plugin.d.ts.map
